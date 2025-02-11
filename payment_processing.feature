@@ -1,15 +1,26 @@
-@payment
-Feature: Payment Processing
+Payment Processing Feature
+
+Description
+
+Payments need to be processed automatically when applicable and 
+user must be able to select a different payment method when needed
+
+
+User Story
+
   As an Uber user
   Whenever I need to request a ride, I expect it to be available
   I want to pay for the service through secure methods
   So that I can complete my trip to my destination
   
-  Background:
+Acceptance Criteria 
+
     Given I have completed my user profile
     And I have registered a valid payment method
     And I have requested a ride
     And a driver has accepted it
+
+Feature: Payment Processing
 
   @automatic-payment
   Scenario: Automatic payment after route completion

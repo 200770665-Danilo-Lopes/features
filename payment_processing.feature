@@ -5,6 +5,10 @@ Description
 Payments need to be processed automatically when applicable and 
 user must be able to select a different payment method when needed
 
+Page
+
+Payment Select (/features/payment/:id)
+
 
 User Story
 

@@ -1,14 +1,26 @@
-@booking
-Feature: Ride Booking
+Ride Booking Feature
+
+Description
+
+A user can request a ride upon providing valid pickup and dropoff locations
+
+Page 
+
+Book a Ride (/features/book_a_ride/:id)
+
+User Story 
+
   As an Uber user
   I want to request a ride to my destination
   So that I can travel conveniently
 
-  Background:
+Acceptance Criteria
+
     Given I have a phone with fully functional network conditions
     And my location services are enabled
     And I have at least one valid payment method
 
+Feature: Ride Booking
   @location
   Scenario: Book ride with current location
     When I open the ride requesting screen

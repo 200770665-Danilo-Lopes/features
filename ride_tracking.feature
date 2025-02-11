@@ -1,13 +1,26 @@
-@tracking
-Feature: Ride Tracking
+Ride Tracking Feature
+
+Description
+
+A user must be able to see trip details in real-time and should be 
+able to share information about it with other contacts from personal phone's address book 
+
+Page 
+
+Track your Ride (/features/ride_tracking/:id)
+
+User Story
+
   As an Uber user
   I want to track my ride in real-time
   So that I can monitor my journey and estimated arrival time
 
-  Background:
+Acceptance Criteria 
+
     Given I am in an active ride
     And my internet connection is stable
 
+Feature: Ride Tracking
   @live-tracking
   Scenario: Track driver location in real-time
     When I view the tracking screen

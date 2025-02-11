@@ -1,12 +1,26 @@
-@feedback
-Feature: Driver and Passenger Rating
+Driver and Passenger Rating Feature
+
+Description
+
+A user must be able to rate the experience using a 1 to 5 stars scale
+and can provide written feedback with comments upon rating a completed ride
+
+Page
+
+Rate Trip (/features/rate_your_trip/:id)
+
+User Story
+
   As an Uber user
   I want to rate my experience
   So that I can provide honest feedback, contributing to maintain service quality
 
-  Background:
+Acceptance Criteria
+
     Given I have completed a trip
     And the payment has been processed
+
+Feature: Driver and Passenger Rating
 
   @rate-driver
   Scenario: Passenger rates driver after route completion

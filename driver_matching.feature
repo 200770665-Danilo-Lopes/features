@@ -3,6 +3,10 @@ Driver Matching Feature
 Description
 A passenger will have a request accepted after available driver is found
 
+Page 
+
+Driver Search (/features/search_driver/:id)
+
 User Story
   As an Uber user
   I want to be matched with the most suitable driver

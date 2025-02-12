@@ -7,14 +7,14 @@ A passenger will have a request accepted after an available driver is found.
 **Driver Search** (`/features/search_driver/:id`)
 
 ### User Story
-```gherkin
+```
 As an Uber user
 I want to be matched with the most suitable driver
 So that I can get to my destination efficiently
 ```
 
 ### Background
-```gherkin
+```
 Given I have requested a ride
 And there are active drivers in my area
 ```
@@ -24,7 +24,7 @@ And there are active drivers in my area
 ### Feature: Driver Matching
 
 #### @matching-criteria
-```gherkin
+```
 Scenario: Match with nearest available driver
   When the system searches for drivers
   Then it should consider the following factors:
@@ -41,7 +41,7 @@ Scenario: Match with nearest available driver
 ```
 
 #### @driver-acceptance
-```gherkin
+```
 Scenario: Driver accepts a new request
   When a nearby driver is found
   Then I should receive a notification
@@ -50,7 +50,7 @@ Scenario: Driver accepts a new request
 ```
 
 #### @driver-decline
-```gherkin
+```
 Scenario: Driver declines a new request
   When the matched driver declines my request
   Then the system should immediately search for another driver

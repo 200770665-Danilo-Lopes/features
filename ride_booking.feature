@@ -1,26 +1,29 @@
-Ride Booking Feature
+# Ride Booking Feature
 
-Description
+## Description
+A user can request a ride upon providing valid pickup and dropoff locations.
 
-A user can request a ride upon providing valid pickup and dropoff locations
+## Page
+**Book a Ride** (`/features/book_a_ride/:id`)
 
-Page 
+## User Story
+```
+As an Uber user
+I want to request a ride to my destination
+So that I can travel conveniently
+```
 
-Book a Ride (/features/book_a_ride/:id)
+## Acceptance Criteria
+```
+Given I have a phone with fully functional network conditions
+And my location services are enabled
+And I have at least one valid payment method
+```
 
-User Story 
-
-  As an Uber user
-  I want to request a ride to my destination
-  So that I can travel conveniently
-
-Acceptance Criteria
-
-    Given I have a phone with fully functional network conditions
-    And my location services are enabled
-    And I have at least one valid payment method
-
+## Feature: Ride Booking
+```
 Feature: Ride Booking
+
   @location
   Scenario: Book ride with current location
     When I open the ride requesting screen
@@ -38,18 +41,19 @@ Feature: Ride Booking
     And I should see the car types available
 
     Examples:
-      | UberX       |
-      | Comfort     |
-      | Black       |
-      | XL          |
+      | ride_type  |
+      | UberX      |
+      | Comfort    |
+      | Black      |
+      | XL         |
 
   @scheduled-ride
   Scenario: Schedule a future ride
     When I tap "Schedule" instead of "Request now"
-    And I confirm <date> and <schedule>  
-    And I enter a valid address as my pickup location 
-    And I enter a valid address as my destination 
-    Then my ride should be scheduled for <date> at <schedule> 
+    And I confirm <date> and <schedule>
+    And I enter a valid address as my pickup location
+    And I enter a valid address as my destination
+    Then my ride should be scheduled for <date> at <schedule>
     And I should receive a confirmation notification
     And I should see the upcoming trip in my scheduled rides list
-    
+```
